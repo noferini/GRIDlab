@@ -4,8 +4,8 @@
     Arguments = "-x prova.sh";
     StdOutput = "std.out";
     StdError = "std.err";
-    InputSandbox = {"/home/alicesgm/testsub/prova.sh","/home/alicesgm/testsub/mymacro.C"};
-    OutputSandbox = {"std.out","std.err"};
+    InputSandbox = {"/home/alicesgm/noferini/GRIDlab/prova.sh","/home/alicesgm/noferini/GRIDlab/mycode.zip"};
+    OutputSandbox = {"std.out","std.err","results.root"};
     Outputsandboxbasedesturi = "gsiftp://localhost";
     Environment = {
       "ALIEN_ORGANISATION=ALICE",

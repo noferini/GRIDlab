@@ -96,7 +96,7 @@ int main(){
   fTPCpr->SetParameter(5,0.938);
 
   // simulation parameters (tuned on PbPb 10-20% @ 2.76 ATeV)
-  Int_t nevents = 100000;
+  Int_t nevents = 1000;
 
   TH1D *hspectra[7];
   Float_t npartPerY[7] = {0,0,0,0,0,0,0};
