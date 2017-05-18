@@ -29,6 +29,8 @@ echo $PATH
 echo $LD_LIBRARY_PATH
 voms-proxy-info -all
 
+unzip mycode.zip
+
 # simulation
 chmod a+x compilasim.sh
 ./compilasim.sh
