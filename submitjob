@@ -1,0 +1,3 @@
+glite-ce-job-submit --noint --logfile test.log -a -r ce04-lcg.cr.cnaf.infn.it:8443/cream-lsf-alice $1 >>listajob
+tail --line=1 listajob
+
