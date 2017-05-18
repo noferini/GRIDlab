@@ -2,7 +2,7 @@
 
 // macro to merge all the files in a list (they should belong to the same school)
 // The header of the first file will be kept
-void DoMerge(char* nomelista="lista",char* output="BOLO-03-2015-02-05-00000.root"){
+void DoMerge(char* nomelista="lista",char* output="resultsmerged.root"){
   FILE *f = fopen(nomelista,"r");
 
   TFileMerger m(kFALSE);
