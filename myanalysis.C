@@ -1,4 +1,7 @@
 {
+  TBenchmark bench;
+  bench.Start("bench");
+
   TFile *f = new TFile("out.root");
   TTree *t = (TTree *) f->Get("tree"); 
 
@@ -85,5 +88,12 @@
 
 
   h->Draw("colz");
+
+  TFile *fout = new TFile("results.root","RECREATE");
+  h->Write();
+  fout->Close();
+
+  bench.Stop("bench");
+  bench.Print("bench");
 
 }

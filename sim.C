@@ -5,7 +5,7 @@
 #include "TMath.h"
 #include "TRandom.h"
 #include "TTree.h"
-
+#include "TBenchmark.h"
 #include "particle.h"
 
 TF1 *fseparation;
@@ -55,6 +55,8 @@ TF1 *fEfficiencyKaTOF;
 TF1 *fEfficiencyPrTOF;
 
 int main(){
+  TBenchmark bench;
+  bench.Start("bench");
 
   fEfficiencyPi = new TF1("fEfficiencyPi","(x > 0.2)*(x-0.2)*(x<0.5)*3 + (x>0.5)*0.9",0,10);
   fEfficiencyKa = new TF1("fEfficiencyPi","(x > 0.2)*(x-0.2)*(x<0.5)*3 + (x>0.5)*0.9",0,10);
@@ -460,6 +462,10 @@ int main(){
 
   t->Write();
   fout->Close();
+
+  bench.Stop("bench");
+  bench.Print("bench");
+
 
   return 0;
 }
