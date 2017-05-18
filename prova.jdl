@@ -4,7 +4,7 @@
     Arguments = "-x prova.sh";
     StdOutput = "std.out";
     StdError = "std.err";
-    InputSandbox = {"/home/alicesgm/noferini/GRIDlab/prova.sh","/home/alicesgm/noferini/GRIDlab/mycode.zip"};
+    InputSandbox = {"/home/alicesgm/noferini/GRIDlab/prova.sh","/home/alicesgm/noferini/GRIDlab/mycode.zip","/home/alicesgm/noferini/GRIDlab/spectra4050.root"};
     OutputSandbox = {"std.out","std.err","results.root"};
     Outputsandboxbasedesturi = "gsiftp://localhost";
     Environment = {
