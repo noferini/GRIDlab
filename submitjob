@@ -1,3 +1,3 @@
-glite-ce-job-submit --noint --logfile test.log -a -r ce04-lcg.cr.cnaf.infn.it:8443/cream-lsf-test $1 >>listajob
+glite-ce-job-submit --noint --logfile test.log -a -r ce08-lcg.cr.cnaf.infn.it:8443/cream-lsf-test $1 >>listajob
 tail --line=1 listajob
 
