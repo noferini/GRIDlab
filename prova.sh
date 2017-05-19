@@ -16,6 +16,8 @@ df -h
 echo --- free --------------------------------------
 free
 
+cat /proc/cpuinfo
+
 #!/bin/bash
 
 export GSHELL_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-276
