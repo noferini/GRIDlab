@@ -20,7 +20,7 @@ free
 
 export GSHELL_ROOT=/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/AliEn/v2-19-276
 export PATH=$PATH:$GSHELL_ROOT/api/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GSHELL_ROOT/api/lib:~
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GSHELL_ROOT/api/lib:/cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/xrootd/v3.3.3/lib/
 export ALIEN_ROOT=$GSHELL_ROOT
 source /cvmfs/alice.cern.ch/x86_64-2.6-gnu-4.1.2/Packages/ROOT/v5-34-30-alice-9/bin/thisroot.sh
 
